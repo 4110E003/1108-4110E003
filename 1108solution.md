@@ -18,9 +18,15 @@
     - 功能是處理應用程式，進而提供使用者網路應用服務
     
 ## 底下網路設備運作在哪一層? Hub, switch, router, L4-switch, proxy
+- Hub
 
-## TCP/IP有那些層?寫出與OSI七層模型的對應!
-
+## TCP/IP有哪些層?寫出與OSI七層模型的對應!
+- 網路介面層，網路層，通道層，應用層 
+  - L1:Hub
+  - L2:實體層Switch
+  - L3:網路層router
+  - L4:傳輸層
+  - L7:應用層
 ## 簡述底下應用層協定(英文全名與簡單功能說明):
 - HTTP vs HTTPs
   - HTTP
