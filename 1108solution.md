@@ -22,6 +22,11 @@
 
 ## TCP/IP有哪些層?寫出與OSI七層模型的對應!
 - 網路介面層，網路層，通道層，應用層 
+- 網路存取層(Network Access Layer)，負責處理實體網路的一個介面，如：
+   資料格式化、實體層的資料定址等。
+ 網際網路層(Internet Layer)，負責邏輯位址(即一般所用的IP位址)的資料傳輸。
+ 傳輸層(Transport Layer)，負責流程控制、錯誤檢查等。
+ 應用層(Application Layer)，負責一些應用的介面，如檔案傳輸、遠端控制等。
   - L1:Hub
   - L2:實體層Switch
   - L3:網路層router
