@@ -38,16 +38,41 @@
     - HyperText Transfer Protocol 超文本傳輸協定
     - HTTP是一種用於分佈式、協作式和超媒體訊息系統的應用層協定。
     - HTTP是全球資訊網的數據通信的基礎。
+    - 資料都是明文，傳遞的過程中有惡意竊聽者，資料便有機會被窺探、盜用。
   - HTTPS
-    - 常稱為HTTP over TLS、HTTP over SSL或HTTP Secure
-    - HTTPS是一種透過計算機網路進行安全通訊的傳輸協定。
-    - 利用SSL/TLS來加密封包。
-    - HTTPS開發的主要目的，是提供對網站伺服器的身分認證，保護交換資料的隱私與完整性。
+    - 全名是 超文本傳輸協定， S 就是 Secure 的意思
+    - 非對稱加密的運算量較高，傳遞回應較慢
+    - 共用金鑰加密進行後續的傳遞，兼顧了安全性及傳遞速度。
 - DNS vs DNSsec
+  - DNS
+    - 網域名稱系統
+    - DNS 將網域名稱轉換為 IP 位址，以便瀏覽器能夠載入網際網路資源。
+  - DNSsec
+    - 網域名稱系統安全擴充（Domain Name System Security Extensions）
+    - 一組加密密鑰對已發佈出去的 DNS 紀錄進行簽名，使紀錄更難以被偽造
 - telnet vs ssh
+  - telnet
+    - 應用層協定，使用於網際網路及區域網中
+    - 資料並未加密，帳號和密碼等敏感資料容易會被竊聽，因此很多伺服器都會封鎖Telnet服務，改用更安全的SSH
+  - ssh
+    - 安全外殼協定（Secure Shell Protocol）加密的網路傳輸協定，可在不安全的網路中為網路服務提供安全的傳輸環境
+    - 最常見的用途是遠端登入系統，傳輸命令列介面和遠端執行命令
 - ftp vs sftp
+  - ftp
+    - File Transfer Protocol (client and server)
+    - 讓檔案從某部裝置傳遞至另一部裝置的軟體應用程式
+  - sftp
+    - Secure File Transfer Protocol，安全文件传输协议
+    - 客户端与服务器间提供了一种更为安全的文件传输方式
 - smtp, pop3
+  - smtp
+    - 主要用于系统之间的邮件信息传递，并提供有关来信的通知
+  - pop3
+    - Post Office Protocol - Version 3
+    - 主要用于支持使用客户端远程管理在服务器上的电子邮件。提供了SSL加密的POP3协议被称为POP3S
 - SNMP
+  - 簡單網路管理協定（SNMP，Simple Network Management Protocol）
+  - 協定能夠支援網路管理系統，用以監測連接到網路上的裝置是否有任何引起管理上關注的情況
 
 ## 簡述底下傳輸層協定(英文全名與簡單功能說明):TCP vs UDP
   - TCP
@@ -55,5 +80,9 @@
     - TCP three-way handshaking(三項交握)
     - TCP syn flood attack
 ## 簡述底下網路層協定(英文全名與簡單功能說明): IP ICMP
-- IP
-- ICMP
+  - IP
+    - Internet Protocol Address
+    - 網際協定中用於標識傳送或接收資料報的裝置的一串數字
+  - ICMP
+    - Internet Control Message Protocol
+    - 網際網路協定（IP）中傳送控制訊息，提供可能發生在通訊環境中的各種問題回饋
